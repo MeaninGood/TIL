@@ -40,7 +40,8 @@
   1. `untracked` : git이 관리하지 않는 파일. 오직 directory 안에만 있는 것.
   2. `tracked` : git이 관리하는 파일.
      - `Unmodified` : 최신 상태
-     - `Modified` : 수정되었지만 Staging area에 반영되기 전, 즉 git이 사용하도록 만들어뒀으나 버전 commit 전
+     - `Modified` : _수정되었지만_  Staging area에 반영되기 전 즉, 수정했으나 버전 commit 전
+       add할 필요 없이(이미 git이 추적 중) commit만 해주면 됨.
      - `staged` : Staging area에 반영된 상태
 
 
@@ -88,6 +89,10 @@
    - 7자리만 나왔던 고윳값을 확인할 수 있음
 
      ![image-20220112170834351](3_GIT.assets/image-20220112170834351.png)
+
+     ![image-20220112171424811](3_GIT.assets/image-20220112171424811.png)
+
+     
 
    - 옵션
 

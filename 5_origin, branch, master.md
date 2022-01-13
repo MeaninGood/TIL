@@ -55,9 +55,12 @@
    
    ```
    
-   ![image-20220113153739027](5. origin, branch, master.assets/image-20220113153739027.png)
    
-   ![image-20220113153824201](5. origin, branch, master.assets/image-20220113153824201.png)
+   ![image](https://user-images.githubusercontent.com/92563854/149342805-7e8fa71e-68a2-4974-a35b-5cc118da4e57.png)
+
+
+   ![image](https://user-images.githubusercontent.com/92563854/149342848-fa16600f-96ab-4bd4-ae49-1f1b7cae98ee.png)
+
    
    
    
@@ -75,7 +78,7 @@
        $ git switch -c {다른 브랜치 이름}
        ```
    
-       ![image-20220113154425578](5. origin, branch, master.assets/image-20220113154425578.png)
+       ![image](https://user-images.githubusercontent.com/92563854/149342900-3595eef8-bcc9-4b1c-a5a3-84d4c1f5141e.png)
    
      
    
@@ -89,11 +92,10 @@
          - `(HEAD -> dev)` 현재 최신 버전(first dev)
          - `(master)`는 구버전(22.01.13)에 있는 것을 알 수 있음
        
-         ![image-20220113162128338](5_origin, branch, master.assets/image-20220113162128338.png)
+         ![image](https://user-images.githubusercontent.com/92563854/149342936-efdf558e-a6af-465f-a2db-d885cc03fca9.png)
        
          -  master로 넘어 와서 dev 브랜치와 병합해 줌
        
          - `$ git log --oneline`로 확인 : Fast-forward 확인하기!
        
-           ![image-20220113164340838](5_origin, branch, master.assets/image-20220113164340838.png)
-
+           ![image](https://user-images.githubusercontent.com/92563854/149342965-51efde5f-86d9-4fee-a7ef-8d3c9a8ad36e.png)

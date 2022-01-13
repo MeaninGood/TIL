@@ -107,7 +107,7 @@
 
 1. 생성 방법
 
-   - `touch .ignore 생성` 후 메모장으로 파일 열기
+   - `$ touch .ignore`로 생성 후 메모장으로 파일 열기
 
      ![image-20220113105903610](3_GIT.assets/image-20220113105903610.png)
 
@@ -269,7 +269,7 @@
 
   3. 원격저장소와 로컬저장소의 버전이 일치하지 않을 때
 
-     ![image-20220113112721135](../../../장지선/Desktop/home/3_GIT.assets/image-20220113112721135.png)
+     ![image-20220113123135628](3_GIT.assets/image-20220113123135628.png)
 
      - push되지 않는 걸 확인할 수 있음
      - `hint`를 보면 ('git pull ...') -> pushing 전 `git pull`로 환경을 맞춰달라는 문구가 보임

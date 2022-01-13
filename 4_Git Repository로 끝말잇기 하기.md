@@ -1,5 +1,9 @@
 # 4. Git Repository로 끝말잇기 하기
 
+
+
+## [나 : 끝말잇기 할 파일 저장소에 올리기]
+
 1. new repository 생성
 
    ![image-20220113133454362](C:\Users\장지선\Desktop\TIL\3_GIT.assets\image-20220113133454362.png)
@@ -76,6 +80,38 @@
      
 
      ![image-20220113135435019](C:\Users\장지선\Desktop\TIL\3_GIT.assets\image-20220113135435019.png)
+
+
+
+
+
+## [상대방 : 끝말잇기할 저장소 가져오기]
+
+1. `$  git clone {레포지토리 주소}` 로 저장소 본인 로컬로 복제
+
+   ![image-20220113140318913](4_Git Repository로 끝말잇기 하기.assets/image-20220113140318913.png)
+
+
+
+2. 끝말잇기 연결한 후 ` add - commit - push`로 업로드
+
+   
+
+
+
+## [나 : `git pull`로 업데이트된 내역 확인, 이어가기]
+
+- `word.md` 파일 껐다 켰다 하며 확인!
+
+![image-20220113140630655](4_Git Repository로 끝말잇기 하기.assets/image-20220113140630655.png)
+
+
+
+![image-20220113140711529](4_Git Repository로 끝말잇기 하기.assets/image-20220113140711529.png)
+
+
+
+
 
 
 

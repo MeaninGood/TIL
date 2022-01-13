@@ -6,7 +6,7 @@
 
 1. new repository 생성  
 
-   ![image-20220113143334816](4_Git Repository&origin.assets/image-20220113143334816.png)
+   ![image-20220113143334816](4_Git Repository.assets/image-20220113143334816-16420572016051.png)
    
    
 

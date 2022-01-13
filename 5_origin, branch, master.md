@@ -44,6 +44,7 @@
    
    # 생성
    $ git branch {branch name}
+   --> 같은 이름의 branch가 이미 있는 경우 생성할 수 없다고 나옴
    
    # 삭제
    ## (병합된 것) 수정내역을 합치고 난 후에 삭제 가능
@@ -53,19 +54,19 @@
    $ git branch -D {branch name}
    
    ```
-
-   ![image-20220113153739027](5. origin, branch, master.assets/image-20220113153739027.png)
-
-   ![image-20220113153824201](5. origin, branch, master.assets/image-20220113153824201.png)
-
    
-
+   ![image-20220113153739027](5. origin, branch, master.assets/image-20220113153739027.png)
+   
+   ![image-20220113153824201](5. origin, branch, master.assets/image-20220113153824201.png)
+   
+   
+   
    - `git switch`
-
+   
      - 현재 브랜치에서 다른 브랜치로 `HEAD`를 이동시키는 명령어
-
+   
      - `HEAD`는 현재 브랜치를 가리키는 포인터
-
+   
        ```bash
        # 다른 브랜치로 이동
        $ git switch {다른 브랜치 이름}
@@ -73,11 +74,26 @@
        # 브랜치 새로 생성과 동시에 이동
        $ git switch -c {다른 브랜치 이름}
        ```
-
+   
        ![image-20220113154425578](5. origin, branch, master.assets/image-20220113154425578.png)
-
+   
      
-
+   
      - 주의 사항
        - `git switch` 하기 전에 `commit` 했나?
-       - `commit` 안 하면 git이 tracking 안 함
+       
+       - `commit` 안 하면 git이 tracking 안 함 --> 오류 발생!!
+       
+       - `git --log` 로 확인해보기
+       
+         - `(HEAD -> dev)` 현재 최신 버전(first dev)
+         - `(master)`는 구버전(22.01.13)에 있는 것을 알 수 있음
+       
+         ![image-20220113162128338](5_origin, branch, master.assets/image-20220113162128338.png)
+       
+         -  master로 넘어 와서 dev 브랜치와 병합해 줌
+       
+         - `$ git log --oneline`로 확인 : Fast-forward 확인하기!
+       
+           ![image-20220113164340838](5_origin, branch, master.assets/image-20220113164340838.png)
+

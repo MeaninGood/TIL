@@ -99,9 +99,17 @@
 
 
 
-## [나 : `git pull`로 업데이트된 내역 확인, 이어가기]
+## [서로 `git pull`로 업데이트 된 것 확인하며 이어가기]
 
-- `word.md` 파일 껐다 켰다 하며 확인!
+- `word.md` 파일 껐다 켰다 하며 확인
+
+- or `git bash`창에서 `$ git pull` 입력
+
+  - 변경 사항 없을 때 : `Already up to date.`라고 나옴
+
+    ![image-20220113141215192](4_Git Repository로 끝말잇기 하기.assets/image-20220113141215192.png)
+
+  - 변경 사항 있을 때 : 변경 내역 뜸
 
 ![image-20220113140630655](4_Git Repository로 끝말잇기 하기.assets/image-20220113140630655.png)
 
@@ -117,19 +125,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-## orgin
+## ## orgin
 
 - 내 원격저장소 주소의 `별명` , 관례상 origin으로 씀
 

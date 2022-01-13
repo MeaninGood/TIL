@@ -6,14 +6,13 @@
 
 1. new repository 생성  
 
-<<<<<<< HEAD
+
    ![image-20220113143334816](4_Git Repository.assets/image-20220113143334816-16420572016051.png)
-   
-   
-=======
+
+
    ![image](https://user-images.githubusercontent.com/92563854/149281207-86cedd8f-3403-426b-9813-c0bf9c26a053.png)
 
->>>>>>> bcdcd3c5f85b844f1d3c9ed7c7df2ecebbff0291
+
 
 
 
@@ -65,7 +64,7 @@
 
    - `$ git remote add origin https://github.com/MeaninGood/word.git` 으로 저장소 등록
    
-   - $ git remote -v`로 확인
+   - `$ git remote -v`로 확인
    
      ![image](https://user-images.githubusercontent.com/92563854/149281394-a259e0a5-9fe8-41cc-ac3a-ab6ae638da43.png)
    

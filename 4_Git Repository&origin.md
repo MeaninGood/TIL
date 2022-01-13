@@ -6,7 +6,7 @@
 
 1. new repository 생성
 
-   ![image-20220113142005614](4_Git Repository로 끝말잇기&origin.assets/image-20220113142005614.png)
+   ![image-20220113143334816](4_Git Repository&origin.assets/image-20220113143334816.png)
 
 
 
@@ -14,7 +14,7 @@
 
    - Word 폴더 생성 - 폴더 내에서 Git bash here 클릭
 
-     ![image-20220113142020587](4_Git Repository로 끝말잇기&origin.assets/image-20220113142020587.png)
+     ![image-20220113143352165](4_Git Repository&origin.assets/image-20220113143352165.png)
 
      
 
@@ -24,25 +24,25 @@
 
    - `$ start word.md`로 만든 파일 실행
 
-     ![image-20220113142031691](4_Git Repository로 끝말잇기&origin.assets/image-20220113142031691.png)
+     ![image-20220113143401979](4_Git Repository&origin.assets/image-20220113143401979.png)
 
      
 
    - 끝말잇기 할 단어 쓰고 저장
 
-     ![image-20220113142043522](4_Git Repository로 끝말잇기&origin.assets/image-20220113142043522.png)
+     ![image-20220113143412683](4_Git Repository&origin.assets/image-20220113143412683.png)
 
      
 
    - `$ git status`로 확인
 
-     ![image-20220113142220601](4_Git Repository로 끝말잇기&origin.assets/image-20220113142220601.png)
+     ![image-20220113143422284](4_Git Repository&origin.assets/image-20220113143422284.png)
 
      
 
    - ` add - commit` 해 줌
 
-     ![image-20220113142231076](4_Git Repository로 끝말잇기&origin.assets/image-20220113142231076.png)
+     ![image-20220113143430106](4_Git Repository&origin.assets/image-20220113143430106.png)
 
      
 
@@ -50,7 +50,7 @@
 
    - $ git remote -v`로 확인
 
-     ![image-20220113142257386](4_Git Repository로 끝말잇기&origin.assets/image-20220113142257386.png)
+     ![image-20220113143438986](4_Git Repository&origin.assets/image-20220113143438986.png)
 
      
 
@@ -59,13 +59,13 @@
      - **첫 저장 시**에만 `-u` 붙여줌!!
      - 이후 생략 가능
 
-     ![image-20220113142309402](4_Git Repository로 끝말잇기&origin.assets/image-20220113142309402.png)
+     ![image-20220113143449437](4_Git Repository&origin.assets/image-20220113143449437.png)
 
      
 
    - Repository 확인 - 생성 완료
 
-     ![image-20220113142317138](4_Git Repository로 끝말잇기&origin.assets/image-20220113142317138.png)
+     ![image-20220113143459307](4_Git Repository&origin.assets/image-20220113143459307.png)
 
      
 
@@ -75,11 +75,11 @@
 
    - `Setting - Manage access - Add people` 로 상대방 초대하기
 
-     ![image-20220113142331019](4_Git Repository로 끝말잇기&origin.assets/image-20220113142331019.png)
+     ![image-20220113143510074](4_Git Repository&origin.assets/image-20220113143510074.png)
 
      
 
-     ![image-20220113142348373](4_Git Repository로 끝말잇기&origin.assets/image-20220113142348373.png)
+     ![image-20220113143533086](4_Git Repository&origin.assets/image-20220113143533086.png)
 
 
 
@@ -89,7 +89,7 @@
 
 1. `$  git clone {레포지토리 주소}` 로 저장소 본인 로컬로 복제
 
-   ![image-20220113142357393](4_Git Repository로 끝말잇기&origin.assets/image-20220113142357393.png)
+   ![image-20220113143542041](4_Git Repository&origin.assets/image-20220113143542041.png)
 
 
 
@@ -107,17 +107,11 @@
 
   - 변경 사항 없을 때 : `Already up to date.`라고 나옴
 
-    ![image-20220113141215192](4_Git Repository로 끝말잇기 하기.assets/image-20220113141215192.png)
+    ![image-20220113143602473](4_Git Repository&origin.assets/image-20220113143602473.png)
 
   - 변경 사항 있을 때 : 변경 내역 뜸
-
-![image-20220113140630655](4_Git Repository로 끝말잇기 하기.assets/image-20220113140630655.png)
-
-
-
-![image-20220113140711529](4_Git Repository로 끝말잇기 하기.assets/image-20220113140711529.png)
-
-
+  
+    ![image-20220113144047690](4_Git Repository&origin.assets/image-20220113144047690.png)
 
 
 

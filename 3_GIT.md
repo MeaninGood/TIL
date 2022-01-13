@@ -4,7 +4,7 @@
 
 - 최초 한 번만 설정
 
-  1. 누가 커밋을 남겼는지 확인할 수 있도록 이름과 이메일 설정.
+  1. 누가 커밋을 남겼는지 확인할 수 있도록 이름과 이메일 설정
 
      ```bash
      $ git config --global user.name 이름
@@ -37,11 +37,11 @@
 - Working directory와 Staging Area에 있는 파일들의 현재 상태 확인
 - **수시로 확인해 줄 것!**
 - 상태
-  1. `untracked` : git이 관리하지 않는 파일. 오직 directory 안에만 있는 것.
-  2. `tracked` : git이 관리하는 파일.
+  1. `untracked` : git이 관리하지 않는 파일. 오직 directory 안에만 있는 것
+  2. `tracked` : git이 관리하는 파일
      - `Unmodified` : 최신 상태
-     - `Modified` : _수정되었지만_  Staging area에 반영되기 전 즉, 수정했으나 버전 commit 전
-       add할 필요 없이(이미 git이 추적 중) commit만 해주면 됨.
+     - `Modified` : _수정되었지만_  Staging area에 반영되기 전 즉, 수정했으나 버전 commit 전.
+       add 후 commit 해주면 됨
      - `staged` : Staging area에 반영된 상태
 
 

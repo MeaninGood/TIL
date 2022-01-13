@@ -7,7 +7,8 @@
 1. new repository 생성  
 
    ![image-20220113143334816](4_Git Repository.assets/image-20220113143334816-16420572016051.png)
-   
+   ![image](https://user-images.githubusercontent.com/92563854/149281207-86cedd8f-3403-426b-9813-c0bf9c26a053.png)
+
 
 
 

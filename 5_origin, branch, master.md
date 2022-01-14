@@ -59,17 +59,17 @@
    ![image](https://user-images.githubusercontent.com/92563854/149342805-7e8fa71e-68a2-4974-a35b-5cc118da4e57.png)
 
 
-   ![image](https://user-images.githubusercontent.com/92563854/149342848-fa16600f-96ab-4bd4-ae49-1f1b7cae98ee.png)
+   																![image](https://user-images.githubusercontent.com/92563854/149342848-fa16600f-96ab-4bd4-ae49-1f1b7cae98ee.png)
 
    
-   
-   
+
+
    - `git switch`
    
      - 현재 브랜치에서 다른 브랜치로 `HEAD`를 이동시키는 명령어
-   
+     
      - `HEAD`는 현재 브랜치를 가리키는 포인터
-   
+     
        ```bash
        # 다른 브랜치로 이동
        $ git switch {다른 브랜치 이름}
@@ -77,11 +77,11 @@
        # 브랜치 새로 생성과 동시에 이동
        $ git switch -c {다른 브랜치 이름}
        ```
-   
-       ![image](https://user-images.githubusercontent.com/92563854/149342900-3595eef8-bcc9-4b1c-a5a3-84d4c1f5141e.png)
-   
      
-   
+       ![image](https://user-images.githubusercontent.com/92563854/149342900-3595eef8-bcc9-4b1c-a5a3-84d4c1f5141e.png)
+     
+       
+     
      - 주의 사항
        - `git switch` 하기 전에 `commit` 했나?
        

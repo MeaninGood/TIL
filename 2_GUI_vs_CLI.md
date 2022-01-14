@@ -1,4 +1,4 @@
-# 2. GUI vs CLI
+# 2. GUI vs CLI 
 
 ## 1. GUI (그래픽 유저 인터페이스)
 

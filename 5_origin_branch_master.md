@@ -2,7 +2,7 @@
 
 
 
-## 1) orgin
+## 1) orgin 
 
 - 내 원격저장소 주소의 `별명` , 관례상 origin으로 씀
 
@@ -62,6 +62,7 @@
    																![image](https://user-images.githubusercontent.com/92563854/149342848-fa16600f-96ab-4bd4-ae49-1f1b7cae98ee.png)
 
    
+
 
 
    - `git switch`

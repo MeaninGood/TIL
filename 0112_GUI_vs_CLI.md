@@ -1,4 +1,4 @@
-# 2. GUI vs CLI 
+# 2. GUI vs CLI  
 
 ## 1. GUI (그래픽 유저 인터페이스)
 
@@ -32,7 +32,7 @@
 
   반드시 현재 작업 위치 확인해야 함
 
-  ![image-20220112150639442](C:\Users\장지선\AppData\Roaming\Typora\typora-user-images\image-20220112150639442.png)
+  ![image-20220119223656317](Pictures/0112_GUI_vs_CLI.assets/image-20220119223656317.png)
 
   
 

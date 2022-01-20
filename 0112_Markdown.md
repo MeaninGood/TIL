@@ -1,4 +1,4 @@
-# 1. Markdown
+# 1. Markdown 
 
 - 총 6개까지 존재 
 
@@ -130,7 +130,7 @@
 
 - typora에는 이미지를 드래그 앤 드랍만으로도 적용 가능.
 
-  ![wallpaperbetter.com_1920x1080](1. Markdown문법.assets/wallpaperbetter.com_1920x1080.jpg)
+  
 
 	
 

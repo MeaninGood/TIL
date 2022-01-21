@@ -41,6 +41,11 @@
    dict_a[key].append[value] # key 이미 있을 때 value 추가
    ## key 유무 판단 : if dict_a.get(key) : 로 할 수 있음
    
+   # ===========================
+   
+   append 하지 않더라도,
+   리스트 + 리스트 = [ , ]로 됨
+   
    
    
    # for문으로 반복해서 value 넣기
@@ -52,9 +57,33 @@
      else: # key 없으면
        dict_sort[age] = [name] # key : value를 추가해 key 값 넣기
    ```
-
    
-
+   
+   
+   - key 접근 방식 `get`
+   
+     ```python
+     # d{'a' :''} 일 때,
+     
+     d['a'] -> KeyError 
+     d.get('a') -> None 반환
+     
+     ## get으로 접근하는 것이 좋다
+     
+     
+     
+     dictionary 핸들링
+     
+     - dict.keys() : 키값 출력
+     - dict.values() : 값 출력
+     - dict.items() : 키와 값 출력
+     - dict.get(key, default) : 키 값에 대응하는 value 출력
+       - (default값 = None이고 na값에 default에 입력된 값을 교환시켜서 출력한다)
+       - dict[key]로도 value를 출력할 수 있는데 이때 na값이 있으면 키에러가 뜨는것이 차이점
+     ```
+   
+     
+   
    
 
 ## 2. 딕셔너리 순회
@@ -169,52 +198,104 @@ eric 90
 
 
 
-
-
-4. 리스트에서 key, value로 딕셔너리 만들기
+4. 2차원 리스트를 딕셔너리로 만들기
 
    ```python
-   a= [[1, 2], [3,4], [5,6]]
-   dict_value = {
-       '작은거':[],
-       '큰거':[],
-   } # key 값 미리 만들어두고, value에 빈 리스트 생성
-   for i in a:
-       dict_value['작은거'].append(min(i)) # min 값 찾아서 넣기
-       dict_value['큰거'].append(max(i)) # max 값 찾아서 넣기
-   print(dict_value)
+   members = [
+       		[0, 0, 0],
+       		[0, 0, 0],
+       		[0, 0, 0]
+   			]
    
-   # =================================
-   
-   
-   a= [[1, 2], [3,4], [5,6]]
-   dict_value = {
-       '작은거':[],
-       '큰거':[],
-   }
-   for i in a:
-       dict_value['작은거'].append(i[0])
-       dict_value['큰거'].append(i[1])
-       # dict_value['작은거'].append(min(i))
-       # dict_value['큰거'].append(max(i))
-   print(dict_value)
-   
-   
-   
-   
-   # ========================================
-   
-   
-   a= [[1, 2], [3,4], [5,6]]
-   
-   dict_value = {} # 빈 딕셔너리
-   idx = ["maximum", "minimum"] # key 이름 
-   for i in idx: # key를 딕셔너리에 넣는 과정 필요함
-      dict_value[i] = [] # dict_value["maximum"] = []로 만들어주는 과정
-   for i in a:
-      for j in range(len(idx)): # value 반복문으로 넣을 거임
-         dict_value[idx[j]].append(i[j]) 
-           # idx의 [j]에 해당하는 값에 a 리스트 i[j]를 넣어줌
+   for number in numbers :
+       for num in number :
+           print(num)
            
+   # members[0][0] -> members[1][0] -> members[2][0] -> members[0][1] ... 순으로 출력
+   
+   
+   numbers = [
+       		{'items' : [1, 2, 3, '철수']}
+   			]
+   
+   # '철수' 뽑기
+   numbers[0]['items'][?]
+   if items == '철수' :
+   # numbers[리스트][딕셔너리][리스트]
+   
+   
+   
+   # =========================================
+   
+   numbers = [
+       		{'items' : [1, 2, 3, '철수']},
+       		{'items' : [1, 2, 3, '영희']}
+   			]
+   
+   for number in numbers :
+       print(number) # 딕셔너리 {} 하나씩 나옴
+       for key in number :
+           print(key) # 키만 따로 나옴 : items
+           print(number[key]) # value만 나옴 : [1, 2, 3, '철수'] , [1, 2, 3, '영희']
+           for i in number[key] :
+               print(i) # value만 한 줄에 하나씩 따로 나옴 1 ~ '철수'
+               if i == '철수' : 
+                   print(i, '정답') # 철수 정답 이라고 나옴 
+   
    ```
+
+   
+
+
+
+
+
+
+
+5. 리스트에서 key, value로 딕셔너리 만들기
+
+```python
+a= [[1, 2], [3,4], [5,6]]
+dict_value = {
+    '작은거':[],
+    '큰거':[],
+} # key 값 미리 만들어두고, value에 빈 리스트 생성
+for i in a:
+    dict_value['작은거'].append(min(i)) # min 값 찾아서 넣기
+    dict_value['큰거'].append(max(i)) # max 값 찾아서 넣기
+print(dict_value)
+
+# =================================
+
+
+a= [[1, 2], [3,4], [5,6]]
+dict_value = {
+    '작은거':[],
+    '큰거':[],
+}
+for i in a:
+    dict_value['작은거'].append(i[0])
+    dict_value['큰거'].append(i[1])
+    # dict_value['작은거'].append(min(i))
+    # dict_value['큰거'].append(max(i))
+print(dict_value)
+
+
+
+
+# ========================================
+
+
+a= [[1, 2], [3,4], [5,6]]
+
+dict_value = {} # 빈 딕셔너리
+idx = ["maximum", "minimum"] # key 이름 
+for i in idx: # key를 딕셔너리에 넣는 과정 필요함
+   dict_value[i] = [] # dict_value["maximum"] = []로 만들어주는 과정
+for i in a:
+   for j in range(len(idx)): # value 반복문으로 넣을 거임
+      dict_value[idx[j]].append(i[j]) 
+        # idx의 [j]에 해당하는 값에 a 리스트 i[j]를 넣어줌
+        
+```
 

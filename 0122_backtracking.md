@@ -249,7 +249,7 @@ for i in range(5) :
        if cur == 3 :
            print(*arr)
            
-       for i in range(5) : # i가 1이라고 생각해보자
+       for i in range(5) : 
            if visited[i] == True :
                continue        
            arr[cur] = i

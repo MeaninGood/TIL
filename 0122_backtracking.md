@@ -159,13 +159,13 @@ recur(0)
 
 
 for i in range(5) :
-    arr[0] = 0
+    arr[0] = i #arr[0] 0 -> 1 -> 2 -> 3 -> 4 -> 5
     # recur(0 + 1)
     for j in range(5) :
-        arr[0] = j
+        arr[0] = j # arr[1] 0 -> 1 -> 2 -> 3 -> 4 -> 5
         # recur(1 + 1)
         for k in range(5) :
-            arr[0] = k
+            arr[0] = k # arr[2] 0 -> 1 -> 2 -> 3 -> 4 -> 5
 
 0 0 0
 0 0 1
@@ -250,29 +250,29 @@ for i in range(5) :
            print(*arr)
            
        for i in range(5) : 
-           if visited[i] == True :
+           if visited[i] == True : # True일 때 continue
                continue        
-           arr[cur] = i
-           visited[i] = True
-           # recur(0 + 1)
+           arr[cur] = i # arr[0]
+           visited[i] = True # [T, F, F, F, F], [F, T, F, F, F], ... [F, F, F, F, T]
+           # recur(0 + 1) = recur(1)
            
            for j in range(5) :
                if visited[j] == True :
                    continue
-               arr[cur] = j
-               visited[j] = True
-               # recur(1 + 1)
+               arr[cur] = j # arr[1]
+               visited[j] = True # [F, T, F, F, F], [F, F, T, F, F], ... [F, F, F, F, T]
+               # recur(1 + 1) = recur(2)
                
                for k in range(5) :
                    if visited[k] == True :
                        continue
-                   arr[cur] = k
-                   visited[k] = True
-                   # recur(2+1) - 안 돌아가는데 그냥 적어만 둠
+                   arr[cur] = k # arr[2]
+                   visited[k] = True # [F, F, T, F, F], [F, F, F, T, F], ... [F, F, F, F, T]
+                   # recur(2+1) = recur(3) - 안 돌아가는데 그냥 적어만 둠
                    
-                   visited[k] = False
-               visited[j] = False    
-           visited[i] = False
+                   visited[k] = False # visited[k] 전에 recur함수 불러줬으므로 아래로 밀려남
+               visited[j] = False # visited[j] 가 visited[k]보다 더 나중에 바뀌는 구조
+           visited[i] = False # k -> j -> i 순으로 False로 변함
     
    recur(0)
    

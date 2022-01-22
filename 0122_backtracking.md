@@ -76,66 +76,66 @@ for i in range(m) :
 
 ## < 오늘의 목표 > n중 반복문 구현
 
-4. 첫 번째 템플릿
+1. 첫 번째 템플릿
 
-   ```python
-   # n자리 m진수의 3가지 방식을 배운다 -> 외운다
-   # 문제를 n자리 m진수 문제로 변형하는 법을 배운다.
-   
-   
-   # 0-based
-   
-   n, m = map(int, input().split())
-   
-   arr = [ 0 for i in range(n) ]
-   def recur(cur) :
-       if cur == n : # 모든 반복문을 돈 거다
-           print(*arr) # print(3)을 하고 종료됨
-           return
-       
-       for i in range(m) :
-           arr[cur] = i
-           recur(cur + 1)
-           
-   recur(0)
-   
-   
-   
-   
-   # if 0 == n :
-   print(*arr) 가 된다
-   
-   else :
-       for i in range(m) :
-           arr[0] = i
-           recur(0 + 1)
-           # recur(0+1)이 다시 for문으로 바뀜
-           for j in range(m) : #아래와 같이 이중 for문이 구성됨
-               arr[0] = j
-               recur(1+1) # 값 1더해짐
-               
-               
-               
-               
-   # 3 5일 떄 출력
-   3 5
-   0 0 0
-   0 0 1
-   0 0 2
-   0 0 3
-   0 0 4
-   0 1 0
-   0 1 1
-   0 1 2
-   0 1 3
-   0 1 4
-   ... 
-   4 4 0
-   4 4 1
-   4 4 2
-   4 4 3
-   4 4 4
-   ```
+```python
+# n자리 m진수의 3가지 방식을 배운다 -> 외운다
+# 문제를 n자리 m진수 문제로 변형하는 법을 배운다.
+
+
+# 0-based
+
+n, m = map(int, input().split())
+
+arr = [ 0 for i in range(n) ]
+def recur(cur) :
+    if cur == n : # 모든 반복문을 돈 거다
+        print(*arr) # print(3)을 하고 종료됨
+        return
+    
+    for i in range(m) :
+        arr[cur] = i
+        recur(cur + 1)
+        
+recur(0)
+
+
+
+
+# if 0 == n :
+print(*arr) 가 된다
+
+else :
+    for i in range(m) :
+        arr[0] = i
+        recur(0 + 1)
+        # recur(0+1)이 다시 for문으로 바뀜
+        for j in range(m) : #아래와 같이 이중 for문이 구성됨
+            arr[0] = j
+            recur(1+1) # 값 1더해짐
+            
+            
+            
+            
+# 3 5일 떄 출력
+3 5
+0 0 0
+0 0 1
+0 0 2
+0 0 3
+0 0 4
+0 1 0
+0 1 1
+0 1 2
+0 1 3
+0 1 4
+... 
+4 4 0
+4 4 1
+4 4 2
+4 4 3
+4 4 4
+```
 
 ```python
 ## <풀어서 써보기 > ##

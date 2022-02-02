@@ -51,7 +51,7 @@
    # for문으로 반복해서 value 넣기
    dict_sort ={}
    for _ in range(N):
-     age, name = input().split()
+     age, name = input().split() # name이 key, age가 value로 들어감
      if dict_sort.get(age): # key 있으면
        dict_sort[age].append(name) # append로 value 추가해줌 
      else: # key 없으면
